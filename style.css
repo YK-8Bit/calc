@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height:650px;
+    width:500px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.numButtons{
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   width: 250px;
+}
+
+#answerDisplay{
+    width: 430px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(0, 166, 255);
+    text-align: right;
+    margin-left: 35px;
+    background-color: black;
+    cursor: default;
+    font-size: 20px;
+}
+
+#questionDisplay{
+    width: 430px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(0, 166, 255);
+    text-align: right;
+    margin-left: 35px;
+    background-color: black;
+    cursor: default;
+    font-size: 20px;
+}
+
+.numButtons button{
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.numButtons button:hover{
+    background-color: rgb(0, 166, 255);
+    color: white;
+}
+
+.operators{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.operators button{
+    padding: 20px;
+    width: 80px;
+    border-radius: 20px;
+    height: 45px;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(0, 166, 255);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+ 
+.operators button:hover{
+    background-color: white;
+    color:rgb(0, 166, 255) ;
+}
+
+.buttonsWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+#zero {
+    grid-column: 2;
+}
+
+.container input{
+    margin-top: 30px;
+    gap: 0px;
+}
+
+#clear{
+background-color: #f39c12;
+color: black;
+}
+
